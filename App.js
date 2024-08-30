@@ -27,6 +27,7 @@ import ReportSafetyIssue from './screens/ProfileScreen/ReportSafetyIssue.jsx';
 import OrderDetailsScreen from './screens/ProfileScreen/OrderDetailsScreen.jsx';
 import Signup from './components/Signup.js';
 import WelcomeLoginScreen from './screens/LoginScreen/WelcomeLogin.jsx';
+import MapForm from './screens/MapScreen/MapForm.js';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -129,6 +130,8 @@ const App = () => {
         <Stack.Screen name="ReportSafetyIssue" component={ReportSafetyIssue} />
         <Stack.Screen name="OrderDetails" component={OrderDetailsScreen} />
         <Stack.Screen name="WelcomeLoginScreen" component={WelcomeLoginScreen} />
+        <Stack.Screen name="MapForm" component={MapForm} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
