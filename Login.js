@@ -158,13 +158,15 @@ const Login = ({ onLogin, onSwitchToSignup }) => {
             <Pressable style={styles.guestButton} onPress={handleGuestLogin} disabled={loadingGuest}>
                 {loadingGuest ? <ActivityIndicator color="#503A73" /> : <Text style={styles.linkTextGuest}>Skip</Text>}
             </Pressable>
+            <View style={styles.logoImageContainer}>
             <Image
                 source={require('../assets/chefHeaven/Chef-Logo-2.png')}
                 style={styles.image}
             />
             </View>
+            </View>
             <View style={styles.bottomSection}>
-            <Text style={styles.title}>Login/Register</Text>
+            <Text style={styles.title}>Content #1</Text>
             {!loginWithEmail ? (
                 <View style={styles.phoneContainer}>
                     <View style={styles.flagContainer}>
@@ -270,10 +272,22 @@ linkTextGuest: {
     borderRadius: 17,
 },
 image: {
-    width: '100%',
-    height: '100%',
-    borderBottomLeftRadius: 40,
-    borderBottomRightRadius: 40,
+    width: '200px',
+    height: '200px',
+    
+},
+logoImageContainer: {
+   
+   width: '100%',
+   height: '100%',
+   borderBottomLeftRadius: 40,
+   borderBottomRightRadius: 40,
+   overflow: 'hidden',
+   backgroundColor: '#503a73',
+   display: 'flex',
+   alignItems: 'center',
+   justifyContent: 'center',
+
 },
 bottomSection: {
     flex: 1,
